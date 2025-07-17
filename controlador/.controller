@@ -1,0 +1,7 @@
+//Crear un esquema con datos de texto, contador de palabras y sentimientos.
+const textSchema = new mongoose.Schema({
+    text: String,
+    wordCount: Number,
+    sentiment: String,
+    keywords: [String],
+    createdAt: { type: Date, default: Date.now }
